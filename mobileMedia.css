@@ -1,0 +1,44 @@
+﻿/* медиа запрос: для экранов с шириной до 1000px */
+@media (max-width: 1000px) {
+    .header-line {
+        justify-content: space-evenly;
+    }
+    .header-logo img {
+        width: 200px;
+    }
+    .header-title {
+        font-size: 40px;
+    }
+
+    .header-suptitle {
+        font-size: 15px;
+        width: 400px;
+    }
+
+    .header {
+        background-image: url(static/files/fon.jpg);
+        height: 40vh;
+    }
+
+    .header-suptitle:before {
+        margin: 1% 0;
+        text-decoration: none;
+        position: absolute;
+        /* content: ''; */
+        content: 'Производство промышленной продукции с помощью современных технологий';
+        font-style: italic;
+        text-align: left;
+        font-size: 14px;
+        height: 0.1px;
+        width: 300px;
+        /* эт длина ^ */
+        background-color: #fff;
+        top: 140px;
+        left: 10px;
+    }
+    .button {
+        font-weight: 111;
+        padding: 12px 12px;
+    }
+
+}

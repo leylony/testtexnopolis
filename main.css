@@ -1,0 +1,52 @@
+.header-line {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-btn {
+    display: none;
+
+}
+
+/* разделы менюшки превратились в бургер */
+@media (max-width: 1000px) {
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-btn:hover {
+        background-color: #fdca30;
+    }
+
+    .drop:hover .nav {
+        display: grid;
+        position: absolute;
+        right: 60%;
+        background-color: rgb(255, 255, 255);
+        left: 40%;
+        padding-top: 15px;
+        background-color: transparent;
+    }
+    .nav a {
+        font-size: large;
+        padding: 2px;
+    }
+
+    .header-line {
+        justify-content: space-between;
+    }
+}

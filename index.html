@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<script>
+    function disableStylesheet(node) {
+        node.disabled = false;
+    }
+    function enableStylesheet() {
+        if (window.innerWidth <= 800) {
+            document
+                .querySelectorAll('link[rel=stylesheet].alternate')
+                .forEach(disableStylesheet);
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='mycss.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobileMedia.css">
+    <title>Технополис</title>
+</head>
+
+<body onload="enableStylesheet(this)">
+
+    <div class='header'>
+        <div class='container'>
+            <div class='header-line'>
+                <div class='header-logo' id='logo'>
+                    <img src="static/files/logo_transparent.png">
+                </div>
+                <div class='drop'>
+                    <button class="nav-btn">&#9776;</button>
+
+                    <div class='nav'>
+                        <a class='nav-item' href="index.html">Главная</a>
+                        <a class='nav-item' href="index2.html">Каталог</a>
+                        <a class='nav-item' href="index3.html">О нас</a>
+                        <a class='nav-item' href="index4.html">Контакты</a>
+                    </div>
+                </div>
+
+                <div class='phone' id='phone'>
+                    <div class='phone-holder'>
+
+                        <div class='number'><a class='num' href='#'>8 (343) 328-88-94</a></div>
+                    </div>
+
+                    <div class='phone-text'>
+                        info@technopolis96.ru
+                    </div>
+                </div>
+
+                <div class='btn' id='send'>
+                    <a class='button' href='index5.html'>Оставить заявку <img src="static/files/zayavkao.svg"
+                            class="mid-vertical"></a>
+                </div>
+
+            </div>
+
+            <div class='header-down'>
+
+                <div class='header-title'>
+                    Добро пожаловать
+                    <div class='header-suptitle'>
+                        ООО «Технополис» является поставщиком широкого ассортимента химической <br> продукции
+                        промышленного и бытового назначения
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="all">
+                <input checked type="radio" name="respond" id="desktop">
+                <article id="slider">
+                    <input checked type="radio" name="slider" id="switch1">
+                    <input type="radio" name="slider" id="switch2">
+                    <input type="radio" name="slider" id="switch3">
+                    <input type="radio" name="slider" id="switch4">
+                    <input type="radio" name="slider" id="switch5">
+                    <input type="radio" name="slider" id="switch6">
+                    <input type="radio" name="slider" id="switch7">
+                    <input type="radio" name="slider" id="switch8">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="image">
+                                <article><img src="static/images/1t.png"></article>
+                                <article><img src="static/images/2t.png"></article>
+                                <article><img src="static/images/3t.png"></article>
+                                <article><img src="static/images/4t.png"></article>
+                                <article><img src="static/images/5t.png"></article>
+                                <article><img src="static/images/6t.png"></article>
+                                <article><img src="static/images/7t.png"></article>
+                                <article><img src="static/images/8t.png"></article>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                        <label for="switch6"></label>
+                        <label for="switch7"></label>
+                        <label for="switch8"></label>
+                    </div>
+                    <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                        <label for="switch6"></label>
+                        <label for="switch7"></label>
+                        <label for="switch8"></label>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class='cards'>
+        <div class='container'>
+            <div class='cards-holder'>
+
+                <div class='card'>
+                    <div class='card-image'>
+                        <img class='card-img' src='static/files/картинка-1.svg'>
+                    </div>
+                    <div class='card-desc'>
+                        Продукция высокого качества. Всегда профессиональное и добросовестное отношение к клиентам и
+                        коллегам.
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-image1'>
+                        <img class='card-img' src='static/files/картинка-2 1.svg'>
+                    </div>
+
+                    <div class='card-desc'>
+                        Гарантируем своевременную доставку высококачественной и безопасной продукции.
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-image'>
+                        <img class='card-img' src='static/files/картинка-3 1.svg'>
+                    </div>
+
+                    <div class='card-desc'>
+                        Обширная сеть партнеров. Развиваем себя, наше предприятие и страну в целом.
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <div class='card-image'>
+                        <img class='card-img' src='static/files/картинка-4 1.svg'>
+                    </div>
+                    <div class='card-desc'>
+                        Компания с историей
+                        Всегда следуем своим договорным и моральным обязательствам
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class='history'>
+
+        <div class='container'>
+
+            <div class='history-holder'>
+                <div class='history-info'>
+                    <div class='history-title'>
+                        Почему именно <span>ООО“Технополис”</span>?
+                    </div>
+
+                    <div class='history-desc'>
+                        <h2>Наше преимущество</h2>
+                        <p>Оформление и отгрузка или получение заказа в одной точке. Современные складские помещения
+                            3500 кв.м. (стеллажное хранение, новейшее грузоподъемное оборудование, удобные подъездные
+                            пути).</p>
+                        <p>Оперативное формирование заказа и его доставка благодаря четкой работе персонала и грамотной
+                            логистике.</p>
+                        <p>Индивидуальный подход к каждому клиенту, гибкие условия оплаты. Возможность доставки заказа
+                            по России автомобильным транспортом, вагонами и контейнерами. Прямые поставки с
+                            заводов-изготовителей. Компания "Технополис" стремится максимально полно обеспечивать
+                            потребности предприятий и организаций в надежном продукте. Мы готовы поддерживать на складе
+                            достаточный согласованный запас наиболее востребованных товаров и готовы немедленно
+                            поставить необходимые позиции по заказу клиента. Наш персонал всегда проявляет гибкость и
+                            доброжелательность по отношению к любому покупателю, независимо от объема заказа. Сотрудники
+                            компании всегда готовы предложить клиенту максимально выгодные цены, удобные для него
+                            условия оплаты и поставки. Заказывать продукцию в компании "Технополис" выгодно, удобно и
+                            приятно. Ваш поставщик подводит по срокам, ценам, ассортименту? Не может закрыть сложные и
+                            неходовые позиции? Звоните, пишите в компанию "Технополис"! Мы поможем!</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class='footer'>
+        © 2024 «ООО Технополис» - производственное предприятие. Все права защищены.
+    </div>
+</body>
+
+</html>

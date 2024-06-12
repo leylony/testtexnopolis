@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='mycss.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Технополис</title>
+</head>
+
+<body>
+
+    <div class='header'>
+        <div class='container'>
+            <div class='header-line'>
+                <div class='header-logo'>
+                    <img src="static/files/logo_transparent.png">
+                </div>
+                <button class="nav-btn">&#9776;</button>
+                <div class='nav'>
+                    <a class='nav-item' href="index.html">Главная</a>
+                    <a class='nav-item' href="index2.html">Каталог</a>
+                    <a class='nav-item' href="index3.html">О нас</a>
+                    <a class='nav-item' href="index4.html">Контакты</a>
+                </div>
+
+                <div class='phone'>
+                    <div class='phone-holder'>
+
+                        <div class='number'><a class='num' href='#'>8 (343) 328-88-94</a></div>
+                    </div>
+
+                    <div class='phone-text'>
+                        info@technopolis96.ru
+                    </div>
+                </div>
+
+                <div class='btn'>
+                    <a class='button' href='index5.html'>Оставить заявку <img src="static/files/zayavkao.svg"
+                            class="mid-vertical"></a>
+                </div>
+            </div>
+
+            <div class="form">
+                <form action="#" id="form" class="formbody">
+                    <h1 class="formtitle">Остались вопросы?</h1>
+                    <h3>Оставьте заявку и мы перезвоним Вам</h3>
+                    <div class="formitem">
+                        <label for="formName" class="formlabel">Имя*</label>
+                        <input id="formName" type="text" name="name" class="forminput _req">
+                    </div>
+                    <div class="formitem">
+                        <label for="formEmail" class="formlabel">E-mail*</label>
+                        <input id="formEmail" type="text" name="email" class="forminput _req _email">
+                    </div>
+                    <div class="formitem">
+                        <label for="formMessage" class="formlabel">Сообщение:</label>
+                        <textarea name="message" id="formMessage" class="forminput"></textarea>
+                    </div>
+                    <div class="formitem">
+                        <div class="checkbox">
+                            <input id="formAgreement" checked type="checkbox" name="agreement"
+                                class="checkboxinput _req">
+                            <label for="formAgreement" class="checkboxlabel"> <span>Я отдаю свое согласие на обработку
+                                    персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
+                        </div>
+                    </div>
+                    <div class="bt">
+                        <button type="submit" class="formbutton">Отправить</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class='footer2'>
+                © 2024 «ООО Технополис» - производственное предприятие. Все права защищены.
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
